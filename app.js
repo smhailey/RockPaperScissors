@@ -34,5 +34,26 @@ function compare(playerWeapon) {
 }
 
 function displayResult(playerWeapon, cpuWeapon) {
-
+  cpuChoice.innerHTML = cpuWeapon
+  if (playerWeapon == cpuWeapon) {
+    winLoseTie.innerHTML = "Tie!"
+  }
+  else if (playerWeapon == "Rock" && cpuWeapon == "Scissors") {
+    winLoseTie.innerHTML = "You win!"
+  }
+  else if (playerWeapon == "Scissors" && cpuWeapon == "Paper") {
+    winLoseTie.innerHTML = "You win!"
+  }
+  else if (playerWeapon == "Paper" && cpuWeapon == "Rock") {
+    winLoseTie.innerHTML = "You win!"
+  }
+  else if (playerWeapon == "Rock" && cpuWeapon == "Paper") {
+    winLoseTie.innerHTML = "You lose!"
+  }
+  else if (playerWeapon == "Scissors" && cpuWeapon == "Rock") {
+    winLoseTie.innerHTML = "You lose!"
+  }
+  else if (playerWeapon == "Paper" && cpuWeapon == "Scissors") {
+    winLoseTie.innerHTML = "You lose!"
+  }
 }
