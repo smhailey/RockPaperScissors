@@ -28,32 +28,29 @@ function compare(playerWeapon) {
     cpuWeapon = 'Scissors'
     displayResult(playerWeapon, cpuWeapon)
   }
-  console.log("index", index)
-  console.log("player choice", playerWeapon)
-  console.log("cpu choice", cpuWeapon)
 }
 
 function displayResult(playerWeapon, cpuWeapon) {
-  document.getElementById("cpuChoice").innerHTML = cpuWeapon
+  document.querySelector("#cpuChoice").innerHTML = cpuWeapon
   if (playerWeapon == cpuWeapon) {
-    document.getElementById("winLoseTie").innerHTML = "Tie!"
+    document.querySelector("#winLoseTie").innerHTML = "Tie!"
   }
   else if (playerWeapon == "Rock" && cpuWeapon == "Scissors") {
-    document.getElementById("winLoseTie").innerHTML = "You win!"
+    document.querySelector("#winLoseTie").innerHTML = "You win!"
   }
   else if (playerWeapon == "Scissors" && cpuWeapon == "Paper") {
-    document.getElementById("winLoseTie").innerHTML = "You win!"
+    document.querySelector("#winLoseTie").innerHTML = "You win!"
   }
   else if (playerWeapon == "Paper" && cpuWeapon == "Rock") {
-    document.getElementById("winLoseTie").innerHTML = "You win!"
+    document.querySelector("#winLoseTie").innerHTML = "You win!"
   }
   else if (playerWeapon == "Rock" && cpuWeapon == "Paper") {
-    document.getElementById("winLoseTie").innerHTML = "You lose!"
+    document.querySelector("#winLoseTie").innerHTML = "You lose!"
   }
   else if (playerWeapon == "Scissors" && cpuWeapon == "Rock") {
-    document.getElementById("winLoseTie").innerHTML = "You lose!"
+    document.querySelector("#winLoseTie").innerHTML = "You lose!"
   }
   else if (playerWeapon == "Paper" && cpuWeapon == "Scissors") {
-    document.getElementById("winLoseTie").innerHTML = "You lose!"
+    document.querySelector("#winLoseTie").innerHTML = "You lose!"
   }
 }
