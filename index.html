@@ -25,25 +25,25 @@
 		<div class="row">
 			<div class="col-4">
 				<a id="buttonRock" href="#" class="d-flex btn btn-primary rounded-pill m-2 justify-content-center"
-					onclick="iChooseRock()">Rock!</a>
+					onclick="playerChoice('rock')">Rock!</a>
 			</div>
 			<div class="col-4">
 				<a id="buttonPaper" href="#" class="d-flex btn btn-primary rounded-pill m-2 justify-content-center"
-					onclick="iChoosePaper()">Paper!</a>
+					onclick="playerChoice('paper')">Paper!</a>
 			</div>
 			<div class="col-4">
 				<a id="buttonScissors" href="#" class="d-flex btn btn-primary rounded-pill m-2 justify-content-center"
-					onclick="iChooseScissors()">Scissors!</a>
+					onclick="playerChoice('scissors')">Scissors!</a>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<h4 class="text-center">Results:</h4>
+				<h4 class="text-center">CPU chose: <span id="cpuChoice"></span></h4>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<h4 id="calculating" class="text-center">Calculating results</h4>
+				<h4 class="text-center"><span id="calculating"></span></h4>
 			</div>
 		</div>
 	</div>
